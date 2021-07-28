@@ -1,6 +1,20 @@
 {
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"far_grounds","path":"sprites/far_grounds/far_grounds.yy",},"order":1,},
+    {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":4,},
+    {"id":{"name":"sea","path":"sprites/sea/sea.yy",},"order":2,},
+    {"id":{"name":"spr_player_idle_right","path":"sprites/spr_player_idle_right/spr_player_idle_right.yy",},"order":0,},
+    {"id":{"name":"spr_player_idle_left","path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},"order":3,},
+    {"id":{"name":"spr_player_run_right","path":"sprites/spr_player_run_right/spr_player_run_right.yy",},"order":1,},
+    {"id":{"name":"sky","path":"sprites/sky/sky.yy",},"order":3,},
+    {"id":{"name":"spr_player_run_left","path":"sprites/spr_player_run_left/spr_player_run_left.yy",},"order":2,},
+    {"id":{"name":"clouds","path":"sprites/clouds/clouds.yy",},"order":0,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"tileset","path":"sprites/tileset/tileset.yy",},"order":4,},
+    {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},"order":5,},
+    {"id":{"name":"spr_player_upToFall","path":"sprites/spr_player_upToFall/spr_player_upToFall.yy",},"order":6,},
+    {"id":{"name":"tiles_main","path":"tilesets/tiles_main/tiles_main.yy",},"order":0,},
+    {"id":{"name":"rm_gameMain","path":"rooms/rm_gameMain/rm_gameMain.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -14,7 +28,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_gameMain","path":"rooms/rm_gameMain/rm_gameMain.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -31,6 +45,8 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Player.yy","order":2,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Environment Background.yy","order":3,"resourceVersion":"1.0","name":"Environment Background","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
