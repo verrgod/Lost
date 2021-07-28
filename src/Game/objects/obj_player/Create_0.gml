@@ -1,9 +1,9 @@
 /// @description movement variables
 
-walkSpeed = 16;
+walkSpeed = 10;
 vx = 0;
 vy = 0;
-jumpHeight = 12;
+jumpHeight = 6;
 dir = 0;
 moveRight = 0;
 moveLeft = 0;
