@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"tiles_forest","path":"tilesets/tiles_forest/tiles_forest.yy",},"order":1,},
     {"id":{"name":"far_grounds","path":"sprites/far_grounds/far_grounds.yy",},"order":1,},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},"order":4,},
     {"id":{"name":"sea","path":"sprites/sea/sea.yy",},"order":2,},
@@ -8,10 +9,14 @@
     {"id":{"name":"spr_player_run_right","path":"sprites/spr_player_run_right/spr_player_run_right.yy",},"order":1,},
     {"id":{"name":"sky","path":"sprites/sky/sky.yy",},"order":3,},
     {"id":{"name":"spr_player_run_left","path":"sprites/spr_player_run_left/spr_player_run_left.yy",},"order":2,},
+    {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},"order":15,},
     {"id":{"name":"clouds","path":"sprites/clouds/clouds.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
+    {"id":{"name":"Tiles","path":"sprites/Tiles/Tiles.yy",},"order":5,},
     {"id":{"name":"tileset","path":"sprites/tileset/tileset.yy",},"order":4,},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},"order":5,},
+    {"id":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},"order":16,},
     {"id":{"name":"spr_player_upToFall","path":"sprites/spr_player_upToFall/spr_player_upToFall.yy",},"order":6,},
     {"id":{"name":"tiles_main","path":"tilesets/tiles_main/tiles_main.yy",},"order":0,},
     {"id":{"name":"rm_gameMain","path":"rooms/rm_gameMain/rm_gameMain.yy",},"order":0,},

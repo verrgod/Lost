@@ -3,6 +3,7 @@
 walkSpeed = 16;
 vx = 0;
 vy = 0;
+jumpHeight = 12;
 dir = 0;
 moveRight = 0;
 moveLeft = 0;
