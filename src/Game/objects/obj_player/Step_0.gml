@@ -46,6 +46,15 @@ if (vx != 0)
 	}
 }
 
+// player footsteps
+if (sprite_index == spr_player_run_left) || (sprite_index == spr_player_run_right)
+{
+	if (!audio_is_playing(sn_playerWalk))
+	{
+		audio_play_sound(sn_playerWalk, 1, false);
+	}
+}
+
 //if player is in the air
 if (!isGrounded)
 {
@@ -54,6 +63,14 @@ if (!isGrounded)
 	{
 		case 0: sprite_index = spr_player_fall_right; break;
 		case 1: sprite_index = spr_player_fall_left; break;
+	}
+	
+	// check if walking footstep is playing when player is in the air
+	if (sprite_index == spr_player_fall_left) || (sprite_index == spr_player_fall_right)
+	{
+		// if player is not in falling state,
+		// stop walking sound
+		audio_stop_sound(sn_playerWalk);
 	}
 }
 
@@ -77,5 +94,9 @@ if (isGrounded and jump)
 
 y += vy;
 
-
+// jump sound effect
+if (jump)
+{
+	audio_play_sound(sn_playerJump, 0, false);	
+}
 	
