@@ -17,7 +17,7 @@ onFloor = place_meeting(x, y + 1, obj_wall);
 
 if (place_meeting(x, y + 1, obj_wall)) && (keyJump)
 {
-	vSpeed -= 8;
+	vSpeed -= 10;
 }
 
 // horizontal collision
