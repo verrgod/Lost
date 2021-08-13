@@ -1,24 +1,9 @@
-/// @description player movement
-
-// Check keys for movement
-moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
-moveLeft = keyboard_check(vk_left) ||keyboard_check(ord("A"));
-keyJump = keyboard_check_pressed(vk_space);
-
-// calculate movement
-var move = moveRight - moveLeft;
-
-hSpeed = move * walkSpeed;
+/// @description slime movement
 
 vSpeed += gravSpeed;
 
-// check if player on ground
+// check if slime on ground
 onFloor = place_meeting(x, y + 1, obj_wall);
-
-if (place_meeting(x, y + 1, obj_wall)) && (keyJump)
-{
-	vSpeed -= 8;
-}
 
 // horizontal collision
 if (place_meeting(x + hSpeed, y, obj_wall))
@@ -27,7 +12,7 @@ if (place_meeting(x + hSpeed, y, obj_wall))
 	{
 		x += sign(hSpeed);
 	}
-	hSpeed = 0;
+	hSpeed = -hSpeed;
 }
 x += hSpeed;
 
@@ -45,7 +30,7 @@ y += vSpeed;
 // sprite animation
 if (!onFloor)
 {
-	sprite_index = spr_player_idle;
+	sprite_index = spr_slime_idle;
 	image_speed = 0;
 	if (sign(vSpeed) > 0) image_index = 0; else sprite_index = spr_player_fall;
 }
@@ -54,11 +39,11 @@ else
 	image_speed = 1;
 	if (hSpeed == 0)
 	{
-		sprite_index = spr_player_idle;
+		sprite_index = spr_slime_idle;
 	}
 	else
 	{
-		sprite_index = spr_player_run;
+		sprite_index = spr_slime_move;
 	}
 }
 
