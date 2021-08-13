@@ -19,4 +19,5 @@ menu[1] = "Continue Game";
 menu[0] = "Exit";
 
 menu_items = array_length_1d(menu);
+menu_top = menu_y - ((menu_itemHeight * 1.5) * menu_items);
 menu_cursor = 2;
