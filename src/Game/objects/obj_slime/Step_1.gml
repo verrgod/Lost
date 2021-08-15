@@ -3,7 +3,7 @@
 
 if (hp <= 0)
 {
-	with(instance_create_layer(x, y, layer, obj_slime_dead))
+	with(instance_create_layer(x, y, layer, obj_slimeDead))
 	{
 		direction = other.hitFrom;
 		hSpeed = lengthdir_x(3, direction);

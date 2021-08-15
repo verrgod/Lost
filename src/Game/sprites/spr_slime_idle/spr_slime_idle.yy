@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Sprites/Enemy.yy",
+    "name": "Slime",
+    "path": "folders/Sprites/Slime.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_slime_idle",

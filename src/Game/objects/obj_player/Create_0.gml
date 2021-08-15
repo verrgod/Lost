@@ -6,6 +6,7 @@ vSpeed = 0;
 gravSpeed = 0.5;
 moveRight = 0;
 moveLeft = 0;
+hasControl = true;
 
 state = "Move";
 hitByAttack = ds_list_create();

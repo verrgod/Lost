@@ -3,14 +3,25 @@
 switch (state)
 {
 	case "Move":
-		#region Move state
-		// Check keys for movement
-		moveRight = keyboard_check(vk_right)
-		moveLeft = keyboard_check(vk_left)
-		keyJump = keyboard_check_pressed(vk_space);
-		keySlide = keyboard_check_pressed(vk_shift);
-		keyAttack = keyboard_check_pressed(ord("A"));
-		
+ 		#region Move state
+		// check if player in control during transition from level to level 
+		if (hasControl)
+		{	
+			// Check keys for movement
+			moveRight = keyboard_check(vk_right)
+			moveLeft = keyboard_check(vk_left)
+			keyJump = keyboard_check_pressed(vk_space);
+			keySlide = keyboard_check_pressed(vk_shift);
+			keyAttack = keyboard_check_pressed(ord("A"));
+		}
+		else
+		{
+			moveRight = 0;
+			moveLeft = 0;
+			keyJump = 0;
+			keySlide = 0;
+			keyAttack = 0;
+		}
 		// calculate movement
 		var move = moveRight - moveLeft;
 
@@ -48,12 +59,12 @@ switch (state)
 		}
 		y += vSpeed;
 
-		// sprite animation
+		// sprite animation 
 		if (!onFloor)
 		{
-			sprite_index = spr_player_idle;
+			sprite_index = spr_player_fall;
 			image_speed = 0;
-			if (sign(vSpeed) > 0) image_index = 0; else sprite_index = spr_player_fall;
+			if (sign(vSpeed) > 0) image_index = 0; else sprite_index = spr_player_idle;
 		}
 		else
 		{
@@ -89,7 +100,15 @@ switch (state)
 	case "Slide":
 		#region Slide state
 		sprite_index = spr_player_slide;
-	
+		mask_index = spr_player_slide;
+		
+		if (sprite_index == spr_player_slide) 
+		{
+			if (!audio_is_playing(sn_playerSlide))
+			{
+				audio_play_sound(sn_playerSlide, 1, false);
+			}
+		}
 		if image_xscale == 1 and not place_meeting(x + 6, y, obj_wall)
 		{
 			x += 6;
@@ -98,7 +117,8 @@ switch (state)
 		if image_xscale == -1 and not place_meeting(x - 6, y, obj_wall)
 		{
 			x -= 6;
-		}
+		}	
+		mask_index = spr_player_idle;
 		#endregion
 		break;
 		

@@ -23,7 +23,7 @@ shakeRemain = max(0, shakeRemain - ((1 / shakeLength) * shakeMagnitude));
 // update camera view 
 camera_set_view_pos(cam, x - view_w_half, y - view_h_half);
 
-if (layer_exists("Clouds"))
+if (layer_exists("MiddleTrees"))
 {
-	layer_x("Clouds", x / 2);
+	layer_x("MiddleTrees", x / 2);
 }

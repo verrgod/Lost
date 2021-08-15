@@ -1,4 +1,4 @@
-/// @description text variables
+ /// @description text variables
 
 spd = 0.25;
 letters = 0;
