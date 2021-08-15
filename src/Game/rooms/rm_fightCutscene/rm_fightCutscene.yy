@@ -16,6 +16,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":608.0,"resourceVersion":"1.0","name":"inst_39298261","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_introFight","path":"objects/obj_introFight/obj_introFight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":608.0,"resourceVersion":"1.0","name":"inst_783F55D6","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_levelAmbience","path":"objects/obj_levelAmbience/obj_levelAmbience.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":608.0,"resourceVersion":"1.0","name":"inst_29599F17","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"parallax_demon_woods_close_trees","path":"sprites/parallax_demon_woods_close_trees/parallax_demon_woods_close_trees.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":true,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"FrontTrees","tags":[],"resourceType":"GMRBackgroundLayer",},
     {"instances":[
@@ -34,6 +35,7 @@
     {"name":"inst_783F55D6","path":"rooms/rm_fightCutscene/rm_fightCutscene.yy",},
     {"name":"inst_52B80679","path":"rooms/rm_fightCutscene/rm_fightCutscene.yy",},
     {"name":"inst_2229FD5B","path":"rooms/rm_fightCutscene/rm_fightCutscene.yy",},
+    {"name":"inst_29599F17","path":"rooms/rm_fightCutscene/rm_fightCutscene.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

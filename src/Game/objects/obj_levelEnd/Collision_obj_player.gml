@@ -8,3 +8,5 @@ with (obj_player)
 		SlideTransition(TRANS_MODE.GOTO, other.target);
 	}
 }
+
+audio_sound_gain(sn_levelAmbience, 0, true);

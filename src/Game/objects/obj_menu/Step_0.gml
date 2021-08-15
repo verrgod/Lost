@@ -44,6 +44,7 @@ if (menu_control)
 
 if (menu_x > gui_width + 150) && (menu_committed != -1)
 {
+	audio_sound_gain(sn_soundTrack, 0, 2000);
 	switch (menu_committed)
 	{
 		case 2: SlideTransition(TRANS_MODE.NEXT); break;
