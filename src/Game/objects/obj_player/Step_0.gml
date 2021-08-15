@@ -94,6 +94,18 @@ switch (state)
 			image_index = 0;
 			state = "Attack";	
 		}
+		// change to hurt state when player gets hit
+		if (flash > 0)
+		{
+			image_index = 0;
+			state = "Hurt";
+		}
+		// change to dead state when player's health reaches 0 or less
+		if (hp <= 0)
+		{
+			image_index = 0;
+			state = "Dead";
+		}
 		#endregion
 		break;
 		
@@ -153,6 +165,30 @@ switch (state)
 		}
 		ds_list_destroy(hitByAttackNow);
 		mask_index = spr_player_idle;
+		#endregion
+		break;
+	
+	case "Hurt":
+		#region Hurt state
+		sprite_index = spr_player_hurt;
+		mask_index = spr_player_hurt;
+
+		
+		#endregion
+		break;
+	
+	case "Dead":
+		#region Dead state
+		sprite_index = spr_player_dead;
+		mask_index = spr_player_dead;
+		
+		instance_change(obj_playerDead, true);
+
+		direction = point_direction(other.x, other.y, x, y);
+		hSpeed = lengthdir_x(6, direction);
+		vSpeed = lengthdir_y(4, direction) - 2;
+
+		if (sign(hSpeed) != 0) image_xscale = sign(hSpeed);
 		#endregion
 		break;
 }

@@ -15,3 +15,9 @@ if (state == "Attack")
 	image_index = 0;
 	state = "Move";
 }
+// setting hurt state back to move state
+if (state == "Hurt")
+{
+	image_index = 0;
+	state = "Move";
+}

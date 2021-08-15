@@ -1,1 +1,1 @@
-target = rm_gameFightTutorial            
+target = rm_fightCutscene;          

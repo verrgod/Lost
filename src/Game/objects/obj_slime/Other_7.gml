@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-triggered = false; 
-inDialogue = false;   
+if state = "Attack"
+{
+	state = "Chase";
+}
+
+if state = "Idle"
+{
+	state = "Chase";
+}

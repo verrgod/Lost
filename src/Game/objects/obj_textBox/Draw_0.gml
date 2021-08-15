@@ -17,3 +17,8 @@ with (obj_player)
 	vSpeed = 0;
 	gravSpeed = 0;
 }
+
+with (obj_slime)
+{
+	state = "Idle"
+}

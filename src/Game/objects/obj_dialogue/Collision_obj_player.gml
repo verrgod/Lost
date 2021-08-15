@@ -16,4 +16,4 @@ if (!triggered)
 		}
 	}
 	triggered = true;
-} 
+}  

@@ -9,4 +9,7 @@ moveLeft = 0;
 hasControl = true;
 
 state = "Move";
+hp = 5;
+flash = 0;
+hitFrom = 0;
 hitByAttack = ds_list_create();
